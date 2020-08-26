@@ -39,11 +39,11 @@ Let's begin by changing the most important thing of all:
 Once you've forked the Beautifull Jekyll repository, it should appear as a repository in your own GitHub.
 You'll see a Setting button. Click on it.
 
-![Click on the settings button to give your website a name](../assets/img/Beautiful_Jekyll_Settings.JPG)
+![Click on the settings button to give your website a name](../assets/img/Beautiful_Jekyll_Settings.jpg)
 
 This will take you to a screen where you will be able to change the name of this repository:
 
-![Change your repository's name](../assets/img/Beautiful_Jekyll_Rename.JPG)  
+![Change your repository's name](../assets/img/Beautiful_Jekyll_Rename.jpg)  
 
 This will also be your website's URL, so take a minute to think about how you would like to name it...  
 Since your name is also a URL (and since it will be hosted on GitHub), your name must have the form **whatever_you_like.github.io**. Darth Vader, for example, could name his website *Death_Star.github.io*, or *Proud_Jedi_Dad.github.io*.
