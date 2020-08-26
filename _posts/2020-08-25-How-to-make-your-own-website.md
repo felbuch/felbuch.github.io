@@ -11,7 +11,7 @@ All you need to do is follow the yellow brick road:
 
 You need a GitHub account.
 
-![GitHub](../assets/img/github-logo.jpg)
+![GitHub](/assets/img/github-logo.jpg)
 
 GitHub allows you to host a [static website](https://en.wikipedia.org/wiki/Static_web_page).
 This means you can have your own website in GitHub.  
@@ -25,7 +25,7 @@ I won't go on the details on how to set up a GitHub account here, but if you nee
 
 One you have your GitHub account set up, go the the [Beautifull Jekyll repository](https://github.com/daattali/beautiful-jekyll). You should see something like the picture below. Notice the **Fork** button, on the upper right corner. You need to click it!
 
-![The Beautiful Jekyll Repository](../assets/img/Beautiful_Jekyll_Fork.PNG)
+![The Beautiful Jekyll Repository](./felbuch.github.io/assets/img/Beautiful_Jekyll_Fork.PNG)
 
 
 When you click the Fork button, you're actually creating a copy of Beautiful Jekyll for youself. This will be the your website. Sure, you'll make changes to it. But the essential structure is already there.
@@ -122,15 +122,14 @@ Next, you'll see a section that looks like this:
 > \# --- List of links in the navigation bar --- # \
 >navbar-links: \
 >  About Me: "aboutme" \
->  Resources: \
->    - Beautiful Jekyll: "https://beautifuljekyll.com" \
->    - Learn markdown: "https://www.markdowntutorial.com/" \
+>  Resources: 
+>    - Beautiful Jekyll: "https://beautifuljekyll.com" 
+>    - Learn markdown: "https://www.markdowntutorial.com/" 
 >    - DataViz catalogue: "https://datavizcatalogue.com/" \
->  Author's LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/" \
 
 These are the items that appear in your navigation bar.  
-Make sure to change the `aboutme.md` file for something that's a true description of yoursel
-Make sure to add your LinkedIn or your CV.  
+You can customize these items, by adding your CV or your LinkedIn, for example.
+Don't forget to change the `aboutme.md` file for something that's a true description of yourself.
 Also, make sure to put some interesting resources for your website's visitors.  
 Make sure you understand the synthax here: when you hover over "Resources", a drop-down menu appear with links to each of the resources listed above. Here is a nice place to refer your visitors to other cool stuff around the web.
 
