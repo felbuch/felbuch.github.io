@@ -11,7 +11,7 @@ All you need to do is follow the yellow brick road:
 
 You need a GitHub account.
 
-![GitHub](/assets/img/github-logo.jpg)
+![GitHub](../assets/img/github-logo.jpg)
 
 GitHub allows you to host a [static website](https://en.wikipedia.org/wiki/Static_web_page).
 This means you can have your own website in GitHub.  
@@ -25,7 +25,7 @@ I won't go on the details on how to set up a GitHub account here, but if you nee
 
 One you have your GitHub account set up, go the the [Beautifull Jekyll repository](https://github.com/daattali/beautiful-jekyll). You should see something like the picture below. Notice the **Fork** button, on the upper right corner. You need to click it!
 
-![The Beautiful Jekyll Repository](./felbuch.github.io/assets/img/Beautiful_Jekyll_Fork.png)
+![The Beautiful Jekyll Repository](../assets/img/Beautiful_Jekyll_Fork.PNG)
 
 
 When you click the Fork button, you're actually creating a copy of Beautiful Jekyll for youself. This will be the your website. Sure, you'll make changes to it. But the essential structure is already there.
@@ -188,8 +188,3 @@ So be patient. And be proud: You just made your very own website!
 If you want to learn more about [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll), a great source is their repository itself. Their `README.md`file is very helpful (in fact, that's what I followed to make this blog post). So make sure to check it out!
 
 Don't like Beautiful Jekyll? There are many other great tools out there that you can use to make your own website. Check [pelican](https://blog.getpelican.com/) or [hugo](https://gohugo.io/) for instance. If you enhoy them and decide to write a blog post teaching how to use them, please let me know! :)
-
-
-```python
-
-```
