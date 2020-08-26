@@ -1,16 +1,9 @@
----
-layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
----
 
-My name is Inigo Montoya. I have the following qualities:
+I once memorised the 30 first digits of $\pi$.   
+I have been trying to forget them ever since!
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I'm absolutely passionate about maths, music, languages and art.  
 
-What else do you need?
+My favorite number is $i^i$, because it looks totally imaginary, but it's not: it's actually 0.207. (Or $\exp\left({-\frac{\pi}{2}}\right)$, to be precise).
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+Next on my list of favorites is the number 37: It's the 12th prime number, while 73 is the 21st. Awesome, isn't it?
