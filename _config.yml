@@ -88,7 +88,7 @@ navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF" # white
 text-col: "#404040"
 link-col: "#FFFFFF" # original: "#008AFF"
-hover-col: "#DCDCDC" # yellow "#FFFF00" # original: "#0085A1"
+hover-col: "#D3D3D3" # yellow "#FFFF00" # original: "#0085A1"
 footer-col: "#EAEAEA"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
