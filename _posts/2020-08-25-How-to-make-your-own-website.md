@@ -110,7 +110,3 @@ So change whatever you like.
 Keep whatever you like.  
 Write your own content, and let your website come to life!
 
-
-```python
-
-```
