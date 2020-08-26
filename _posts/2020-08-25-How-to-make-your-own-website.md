@@ -51,7 +51,7 @@ Since your name is also a URL (and since it will be hosted on GitHub), your name
 
 ### Step 4: Customizing your website
 
-You'll notice that the Beautiful Jekyll package comes with many files. One of them is called **_config.yml**.  
+You'll notice that the Beautiful Jekyll package comes with many files. One of them is called **\_config.yml**.  
 
 This file configures your website's structure.
 It has lots of stuff in it, but it's easy to understand if you just give it a try.
@@ -99,16 +99,90 @@ I put mine on the **assets** folder, inside the **img** subfolder.
 
 ### Step 6: Own and make it your own
 
+Let's give your website those final touches, to make it suit your style!  
+
 Beautiful Jekyll comes with a number of default files.  
 The *_posts* folder has two default posts, for example.
 You won't want these files in your website, so just go ahead and delete them.  
 
-Beautiful Jekyll comes with a running default version of a website.
-It's a good website, but it's not *your* website.  
-It's just for illustration purposes.  
-So change whatever you like.  
-Keep whatever you like.  
-Write your own content, and let your website come to life!
+Now, open the **\_config.yml** again and scroll down with me.  
+Look for a section that looks somewhat like this one:
+
+> \# --- Required options --- # \
+>\# Name of website \
+> title: Data Journey \
+> \# Your name to show in the footer \
+> author: Felipe Buchbinder
+
+Here you can change your website's name. This name will appear on the navigation bar, on top of your website.  
+You can also identify yourself as the author of the website.  
+
+Next, you'll see a section that looks like this:  
+
+> \# --- List of links in the navigation bar --- # \
+>navbar-links: \
+>  About Me: "aboutme" \
+>  Resources: \
+>    - Beautiful Jekyll: "https://beautifuljekyll.com" \
+>    - Learn markdown: "https://www.markdowntutorial.com/" \
+>    - DataViz catalogue: "https://datavizcatalogue.com/" \
+>  Author's LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/" \
+
+These are the items that appear in your navigation bar.  
+Make sure to change the `aboutme.md` file for something that's a true description of yoursel
+Make sure to add your LinkedIn or your CV.  
+Also, make sure to put some interesting resources for your website's visitors.  
+Make sure you understand the synthax here: when you hover over "Resources", a drop-down menu appear with links to each of the resources listed above. Here is a nice place to refer your visitors to other cool stuff around the web.
+
+Next, you'll have the opportunity to change your avatar.  
+The default avatar is GitHub's cat logo.  
+But you can do better than that!  
+Find a nice, small picture and use it as your logo. (Note that I saved it o the *assets/img* folder) 
+Most pictures in the web are rectangles, but you can make it look round by setting `round-avatar` to true.
+
+> \# --- Logo --- #
+>\# Image to show in the navigation bar - works best with a square image \
+>\# Remove this parameter if you don't want an image in the navbar \
+>avatar: "/assets/img/top-of-page.jpg" \
+>\# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false' \
+>round-avatar: true
+
+Next, you'll find a long list of commented social media addresses.  
+Here's where you can add links to Twitter, Instagram, Facebook, Linkedin,... you name it!
+
+Continue scrolling down, and you'll soon find a session that looks like this:
+
+> \# Personalize the colours in your website. Colour values can be any valid CSS colour \
+>navbar-col: "#000080" \
+>navbar-text-col: "#FFFFFF" \
+>navbar-border-col: "#DDDDDD" \
+>page-col: "#FFFFFF" \
+>text-col: "#404040" \
+>link-col: "#FFFFFF" \
+>hover-col: "#D3D3D3" \
+>footer-col: "#EAEAEA" \
+>footer-text-col: "#777777" \
+>footer-link-col: "#404040"
+
+Here's where you can change the colors of your website and give it a brand new look!  
+Each color is designated by a name composed of letters and numbers.  
+"#FFFFFF", for example, means "white", and "#000080" means "navy blue".  
+These codes are called **CSS code**.  
+[This website](https://www.rapidtables.com/web/css/css-color.html#blue) has the CSS code of pretty much any color you can think of.  
+And if you have a CSS code and need to find out what color it is, this [amazing tool](https://www.colorhexa.com/) will surely help.
+
+### Step 7: Running your website
+
+To make changes to your website, simply add, commit, and push everything to the GitHub reposotory.  
+Your website will be generated automatically.  
+No need to press any buttons, or run any commands.  
+If it's in your GitHub, it's running.  
+But there's a catch: even after you push any changes to GitHub, it can take a while untill your actually see any changes on your webpage.  
+So be patient. And be proud: You just made your very own website!  
+
+![Celebrate!](../assets/img/celebrate.jpg)
+
+(This time, it's for real!)
 
 ### Additional resources
 
