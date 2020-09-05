@@ -10,7 +10,7 @@ author: Felipe Buchbinder
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
+  Portfolio:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
     - DataViz catalogue: "https://datavizcatalogue.com/"
@@ -85,11 +85,13 @@ excerpt_length: 50
 navbar-col: "#000080" # navy blue	# original: "#EAEAEA"
 navbar-text-col: "#FFFFFF" # white # original: "#404040"
 navbar-border-col: "#DDDDDD"
+navbar-children-col: "#FFFFFF"
 page-col: "#FFFFFF" # white
 text-col: "#404040" #black
 link-col: "#008AFF"
 hover-col: "#FFDF00" # yellow. ## "##DAA520" # grey ## original: "#0085A1"
 footer-col: "#EAEAEA"
+footer-hover-col: "#D79923"
 footer-text-col: "#777777"
 footer-link-col: "#404040"
 
