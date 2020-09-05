@@ -1,33 +1,31 @@
 # --- Required options --- #
 
 # Name of website
-title: Data Journey
+title: Data Stories 
 
 # Your name to show in the footer
-author: Felipe Buchbinder
+author: Felipe Buchbinder 
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
   About Me: "aboutme"
   Portfolio:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-    - DataViz catalogue: "https://datavizcatalogue.com/"
-  Author's LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/"
+    - How To Make Your Own Website: "https://felbuch.github.io/2020-08-25-How-to-make-your-own-website/"
+  LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/"
 
 # --- Logo --- #
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/top-of-page.jpg"
+avatar: "/assets/img/my_foto.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+#title-img: "/assets/img/avatar_img.jpg"
 
 
 # --- Footer social media links --- #
@@ -36,9 +34,13 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "felbuch@gmail.com"
-  github: felbuch
+  #facebook: ?
+  github: "https://github.com/felbuch"
+  #twitter: 
 #  reddit: yourname
-  linkedin: felipe-buchbinder-a65a0199/
+  LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/"
+
+
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -57,7 +59,7 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+#rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 
@@ -70,7 +72,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "felbuch@github.io"
+url-pretty: "felbuch.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -82,18 +84,18 @@ excerpt_length: 50
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#000080" # navy blue	# original: "#EAEAEA"
-navbar-text-col: "#FFFFFF" # white # original: "#404040"
-navbar-border-col: "#DDDDDD"
+navbar-col: "#026670"
+navbar-text-col: "#FFFFFF"
+navbar-border-col: "#026670"
 navbar-children-col: "#FFFFFF"
-page-col: "#FFFFFF" # white
-text-col: "#404040" #black
+page-col: "#faf9f7"
+text-col: "#182628"
 link-col: "#008AFF"
-hover-col: "#FFDF00" # yellow. ## "##DAA520" # grey ## original: "#0085A1"
-footer-col: "#EAEAEA"
+hover-col: "#D79922"
+footer-col: "#026670"
 footer-hover-col: "#D79923"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
+footer-text-col: "#FFFFFF"
+footer-link-col: "#D79923"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -153,12 +155,12 @@ footer-link-col: "#404040"
 # in the "siteKey" and "secret" parameters below and also in `staticman.yml`.
 # See more details at https://staticman.net/
 #staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
-#  reCaptcha:
-#    siteKey  : # Use your own site key, you need to apply for one on Google
-#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+  #repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  #branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+  #endpoint   : # (optional) URL of your own deployment, with a trailing slash eg. https://<your-api>/v3/entry/github/ (will fallback to a public GitLab instance)
+  #reCaptcha:
+    #siteKey  : # Use your own site key, you need to apply for one on Google
+    #secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
@@ -216,4 +218,7 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
+
+theme: jekyll-theme-cayman
 
