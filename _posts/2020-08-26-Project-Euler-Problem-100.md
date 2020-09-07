@@ -1,6 +1,4 @@
 
-## Problem 100
-
 When I came accross [Problem 100](https://projecteuler.net/problem=100) from the [Euler's Project](https://projecteuler.net/about), I felt it was to sweet to overlook:
 
 >If a box contains twenty-one coloured discs, composed of fifteen blue discs and six red discs, and two discs were taken at random, it can be seen that the probability of taking two blue discs, P(BB) = (15/21)×(14/20) = 1/2.  
@@ -137,7 +135,7 @@ while not is_divisible(N, np.sqrt(2)):
     N += 1
 ```
 
-    Wall time: 499 ms
+    Wall time: 376 ms
     
 
 We found a solution!

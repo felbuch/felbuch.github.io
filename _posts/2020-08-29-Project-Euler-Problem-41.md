@@ -28,13 +28,17 @@ We've just reduced the amount of work by 50%.
 
 Another insight is that we don't need to search for divisors all the way up to the number we're checking.  
 We only need to go all the way up to it's square root.  
+
 Take number 21, for instance. It's square root is slightly over 4.  
 We know that 21 is divisible by 7, which is greater than the square root of 21.  
 Indeed, 21 divided by 7 is 3.  
 But this means that 21 is also divisible by 3, which is less than the square root of 21.  
 Knowing that 21 is divisible by 3 is enough to show that it's not a prime. We don't need to go all the way to number 7.
+
 In short, if some prime factor greater than the square root exists, then a prime factor smaller than the square root must also exist. This is a brilliant insight that the Babylonians used to calculate square roots in an amazingly simple and efficient method (considering the technology they had available).
+
 The takeaway for our purposes is that we don't need to check for any divisors above the square root of a number to know wheather it's prime or not.  
+
 This significantly reduces the amount of calculation we have to do.  
 So let's write that in a function:
 
