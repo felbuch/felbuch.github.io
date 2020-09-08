@@ -185,6 +185,7 @@ img {
 .navbar-custom .navbar-nav .dropdown-item:focus {
   color: {{ site.hover-col | default: "#ffffff" }}; 
 }
+.dropdown-items {color : white;}
 
 .navbar-custom .navbar-nav .nav-item {
   text-transform: uppercase;
