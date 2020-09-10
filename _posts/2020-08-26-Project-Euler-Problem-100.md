@@ -99,12 +99,12 @@ def is_divisible(a, b):
     
     '''Checks if a number (float) a is divisible by another number (float) b.
     
-    Inputs:
-    ------
+    Parameters:
+    -----------
     a : a float which we want to test if is divisible by b
     b : a float which we want to test if divides a
     
-    Output:
+    Returns:
     -------
     A boolean. True if *a* is divisible by *b* and False otherwise.
     
