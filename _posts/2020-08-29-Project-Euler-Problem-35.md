@@ -1,7 +1,7 @@
 
 Prime numbers are cool, but circular primes are awesome!
 
-A number is a circular prime if all its circular permutations are prime.  For example, the circular permutations of $179$ are $917$, %791% and $179$ itself. They're all prime! So $179$ is a circular prime.
+A number is a circular prime if all its circular permutations are prime.  For example, the circular permutations of $179$ are $917$, $791$ and $179$ itself. They're all prime! So $179$ is a circular prime.
 
 You can get the feeling that circular primes aren't that common...
 
@@ -40,8 +40,10 @@ def is_prime(n):
     If it is, then n is not prime and False is returned.
     
     Otherwise, we check for the existence of a number m that can divide n.
-    We only check for m up to the square root of n (rounder upwards to the nearest integer).
-    This is because if n is divisible by a number >= sqrt(n), then it is also divisible by a number <= sqrt(n).
+    We only check for m up to the square root of n 
+    (rounded upwards to the nearest integer).
+    This is because if n is divisible by a number >= sqrt(n), 
+    then it is also divisible by a number <= sqrt(n).
     If a divisor for n is found, then n is not prime, and False is returned.
     
     Otherwise, n is prime and True is return.
@@ -72,11 +74,14 @@ def is_prime(n):
         #If n is odd, we'll have to check if any number m can divide n
         
         #We only need to check divisors up to the square root of n.
-        #Therefore, the largest candidate for divisors of n is sqrt(n), rounded upwards:
+        #Therefore, the largest candidate for divisors of n is sqrt(n),
+        #rounded upwards:
         largest_candidate = int(np.ceil(np.sqrt(n)))
         
         #Test if each number up to sqrt(n) divides n.
-        #We only test odd numbers, so we start at 3 and advance 2 steps each turn, doing 3, 5, 7, etc.
+        #We only test odd numbers, 
+        #so we start at 3 and advance 2 steps each turn, 
+        #doing 3, 5, 7, etc.
         for m in range(3, largest_candidate + 1, 2):
             #If m divides n,...
             if n % m == 0:
@@ -115,9 +120,11 @@ def cyclic_permutations(n):
     """
     
     s = str(n)
+    L = len(s)
     
-    for shift in range(len(s)):
-        output = int(''.join([s[(position - shift)%len(s)] for position in range(len(s))]))
+    for shift in range(L):
+        output = int(''.join([s[(position - shift)%L] \
+                              for position in range(L)]))
         yield output
 ```
 
@@ -146,7 +153,8 @@ def is_circular_prime(n):
     """
     Checks if a number is a a circular prime.
     
-    A number is a circular prime if all its circular permutations are prime numbers.
+    A number is a circular prime if all its circular permutations
+    are prime numbers.
     
     Parameters
     ----------
@@ -200,7 +208,7 @@ We see that our function indeed identifies it as a circular prime:
 is_circular_prime(197)
 ```
 
-    30.6 µs ± 13.9 µs per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    38.6 µs ± 13.9 µs per loop (mean ± std. dev. of 7 runs, 1 loop each)
     
 
 We wish to identify all circular primes up to a million.  
@@ -227,7 +235,8 @@ def count_circular_primes(N):
     Notes:
     ------
     This function assumes n >= 3.
-    This way, it can start at 3 and count only odd numbers as candidates for being circular primes.
+    This way, it can start at 3 and count only odd numbers
+    as candidates for being circular primes.
     
     Examples:
     ---------
@@ -277,7 +286,7 @@ We may thereby attempt to use the function above to calculare all circular prime
 count_circular_primes(10**6)
 ```
 
-    Wall time: 40.9 s
+    Wall time: 33.8 s
     
 
 
@@ -301,7 +310,7 @@ We don't need to verify number $791$, for instance, because number $197$ has alr
 
 A difficulty arrises, however, in numbers like $113$, where $1$ will be the smallest digit twice.  
 These means we'll add $3$ to the counter twice: first, when we meet number $113$, and then again, when we meet number $131$.
-So, rather than adding $3$ each time, let's add $3/2$, where the $2$ in the denominator is simply the number of times the smallest digit ($1$) appears in $113$.
+So, rather than adding $3$ each time, let's add $3/2$, where the $2$ in the denominator is simply the number of times the smallest digit (that is, $1$) appears in $113$.
 
 These considerations allows us to modify our previous function and build a faster version for it:
 
@@ -313,7 +322,8 @@ def fast_count_circular_primes(N):
     """
     Counts the number of smaller primes smaller than or equal to N.
     
-    This function is faster than count_circular_primes, particularly for larger values of N.
+    This function is faster than count_circular_primes,
+    particularly for larger values of N.
     
     Parameters
     ----------
@@ -328,7 +338,8 @@ def fast_count_circular_primes(N):
     Notes:
     ------
     This function assumes n >= 3.
-    This way, it can start at 3 and count only odd numbers as candidates for being circular primes.
+    This way, it can start at 3 and count only odd numbers
+    as candidates for being circular primes.
     
     This function attempts to avoid counting cyclic primes multiple times.
     For example, once we verified that number 179 is a cyclic prime, 
@@ -337,12 +348,15 @@ def fast_count_circular_primes(N):
     So we only verify numbers whose first digit is also its smallest digit.
     Number 917 does not need to be counted, because number 179 has already been.
     
-    Thus, when we verify that number 179 is a cyclic prime, we increment its count by 3 (not by 1),
+    Thus, when we verify that number 179 is a cyclic prime,
+    we increment its count by 3 (not by 1),
     since it has 3 distinct cyclic permutations.
     
-    A problem arises, however, with numbers whose smallest digit appears more than once, such as 113.
+    A problem arises, however, with numbers whose smallest digit 
+    appears more than once, such as 113.
     In this case, the smallest digit will be the first digit twice.
-    In order to correct this, rather than adding 3 to the number of cyclic counts,
+    In order to correct this, 
+    rather than adding 3 to the number of cyclic counts,
     we add 3 / 2.
     More generally, we add the number of digits from the cyclic prime
     divided by the number of occurences of its smallest digit.
@@ -386,7 +400,7 @@ Let's see how it performs calculating all the circular primes from 1 to a millio
 fast_count_circular_primes(10**6)
 ```
 
-    Wall time: 5.67 s
+    Wall time: 4.62 s
     
 
 
@@ -405,9 +419,14 @@ Let's see how much faster by looking at some confidence intervals:
 %timeit fast_count_circular_primes(10**6)
 ```
 
-    34.2 s ± 6.57 s per loop (mean ± std. dev. of 7 runs, 1 loop each)
-    5.4 s ± 581 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    36.1 s ± 5.8 s per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    5.49 s ± 423 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
     
 
-The average running time reduced from 34 to 5 seconds. 
+The average running time reduced from 36 to 5 seconds. 
 That's quite amazing!
+
+
+```python
+
+```
