@@ -14,7 +14,7 @@ To get a better grasp of what's going on, let's do our own analysis on malaria. 
 
 The good news is that the world has been reducing Deaths by malaria:
 
-![Malaria world](../assets/img/Malaria/Mortality_world.png)
+![Malaria world](../assets/img/Malaria/Mortality_world.PNG)
 
 However, up to 2003, malaria was rising steadily.  
 Only after 2003 did the world start to defeat the desease.  
@@ -31,7 +31,7 @@ Global statistics may be hiding one of the major global problems: inequality.
 When this happens, global aggregates may cease to be informative.
 So let's check if the global statistic is representative of what happens to countries individually:
 
-![World_vs_countries](../assets/img/Malaria/Mortality_world_vs_countries.png)
+![World_vs_countries](../assets/img/Malaria/Mortality_world_vs_countries.PNG)
 
 What a mess!  
 It's not like all countries follow more or less what happens on the global level.  
@@ -39,7 +39,7 @@ Rather, it seems there are many countries whose mortality is far higher than the
 
 Where are these countries?
 
-![Malaria around the world](../assets/img/Malaria/world_map.png)
+![Malaria around the world](../assets/img/Malaria/world_map.PNG)
 
 Malaria seems clearly a much bigger problem in Africa than anywhere else in the world!  
 Indeed, it seems pretty much like it's confined to Africa.
@@ -56,7 +56,7 @@ We see deaths in Africa increasing and then, suddenly, changing direction and de
 
 Such decrease, however, has not been uniform in all countries. We can look at each country individually in the heatmap bellow. Note how most of the dark lines get softer over time. This means these countries have done progress in combating malaria. 
 
-![Heatmap](../assets/img/Malaria/heatmap.png)
+![Heatmap](../assets/img/Malaria/heatmap.PNG)
 
 Yet, for most of those countries, malaria isn't really an issue.
 So how do we identify countries where malaria really *is* an issue?
@@ -111,11 +111,11 @@ Burundi, however, seems to have reduced malaria mortality substantially!
 
 But let's be fair: even among the most harshly afflicted countries, there may still be countries that are much better or worse than others. So let's compare how they performed in improving relative to were they began, in 1990:
 
-![](../assets/img/Malaria/evolution_most_affected.png)
+![](../assets/img/Malaria/evolution_most_affected.PNG)
 
 While most countries experience an overall decrease in mortality, not all do: Cameroon experienced a galopping 21% increase, and Equatorial Guinea is not much better. Bellow we see al countries that are actually _worse_ in 2016 than thet were in 1990.
 
-![table](../assets/img/Malaria/table.png)
+![table](../assets/img/Malaria/table.PNG)
 
 How much does malaria affect the countries we're currently studying?  
 It depends what do we mean by "affect". Affect what?  
