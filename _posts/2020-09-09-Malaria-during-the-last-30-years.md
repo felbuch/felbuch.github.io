@@ -107,7 +107,7 @@ The heatmap below suggests it really depends on the country.
 Burkina Faso didn't seem to have done much progress at all.  
 Burundi, however, seems to have reduced malaria mortality substantially!
 
-![Heatmap 2](../assets/img/Malaria/Heatmap2.png)
+![Heatmap 2](../assets/img/Malaria/Heatmap2.PNG)
 
 But let's be fair: even among the most harshly afflicted countries, there may still be countries that are much better or worse than others. So let's compare how they performed in improving relative to were they began, in 1990:
 
@@ -132,7 +132,7 @@ Countries with higher malaria mortality rates are also countries with lower life
 A steeper regression line suggests a stronger association between the two.  
 It is therefore interesting to observe that the regression line becomes more horizontal over time, suggesting that malaria has become responsible for a smaller and smaller share of the factors that decrease life expectancy.
 
-![impact](../assets/img/Malaria/impact_of_Malaria.gif)
+![impact](../assets/img/Malaria/impact_of_malaria.gif)
 
 Interestingly, note the blue dot.  
 That's Rwanda. 
