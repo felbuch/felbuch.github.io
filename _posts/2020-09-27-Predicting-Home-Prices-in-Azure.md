@@ -1,15 +1,13 @@
 
-## Introduction
+Can the price of salt be more predictive of home prices, than the cost of building the home itself?  
 
-Salt is a bitter pill to swallow for those who have never met Adam Smith:   
-If unrefined salt has to be refined in order to produce refined salt, why is refined salt *cheaper* than unrefined salt?  
-Shouldn't it be more *expensive*, since it needs more processing and therefore additional cost?    
+"Of course not!", cries our intuition! Salt has no relationship with houses whatsoever! Building costs, however, are an closely related to houses: one can never exist without the other! When you pay for a house, you're paying for its building costs, so these two are obviously related! Right? Well...
 
-While this makes sense, it turns out not to be the case.    
-A product's price is the result of a tug-of-war between supply and demand. 
-Sure, production costs do play a role on the supply side, but this role does not on its own determine a product's price.  
+Not quite. From an Economics perspective, the price of something is derived from a tug-of-war between suply and demand. Sure, costs are really important for the supply side, but it does not play a direct part on determining price. If costs are high, but demand elasticity is low, prices will remain low, and it's the suplier's profit margin that will be hampered.  
 
-Another example where this happens is on the price of housing. One could expect that as the cost of building goes up, so should the price of houses. And yet, if you look at the relationship between them, this is what you get:
+One example I've always found interesting to ilustrate this point is salt. Refined salt is more expensive to produce than unrefined salt, because you need to get the unrefined salt and refine it. There's an additional step in the production line. We would therefore expect that refined salt would be more expensive than unrefined salt. Actually, the opposite is true!  
+
+So the relationship between costs and prices is not as direct as our common sense may have us believe. To get back to house prices and building costs, we could expect that as the cost of building goes up, so should the price of houses. And yet, if you look at the relationship between them, this is what you get:
 
 ![Building_v_Imaging](../assets/img/house_prices/Building_v_Index.png)
 
