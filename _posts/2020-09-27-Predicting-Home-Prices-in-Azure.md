@@ -1,7 +1,7 @@
 
 Can the price of salt be more predictive of home prices, than the cost of building the home itself?  
 
-"Of course not!", cries our intuition! Salt has no relationship with houses whatsoever! Building costs, however, are closely related to houses: one can never exist without the other! When you pay for a house, you're paying for its building costs, so these two are obviously related! Right? Well...
+"Of course not!", cries our intuition! Salt has no relationship with houses whatsoever! Building costs, however, are an closely related to houses: one can never exist without the other! When you pay for a house, you're paying for its building costs, so these two are obviously related! Right? Well...
 
 Not quite. From an Economics perspective, the price of something is derived from a tug-of-war between suply and demand. Sure, costs are really important for the supply side, but it does not play a direct part on determining price. If costs are high, but demand elasticity is low, prices will remain low, and it's the suplier's profit margin that will be hampered.  
 
@@ -170,7 +170,7 @@ Our model looks pretty good. But what accounts for such performance?
 
 When we started discussing home prices, we talked about using the price of table salt to predict home pricing. The price of table salt was actually a metaphor for the consumer good index, which we showed had a much less noisy relationship to house prices than the actual cost of building the house. Let's look at them again:
 
-![building_cost_v_cpi](../assets/img/house_prices/building_cost_v_cpi.PNG)
+![building_cost_v_cpi](../assets/img/house_prices/building_cost_v_cpi.png)
 
 Because of this, we theorized that the consumer price index would be much more useful in predicting house prices than the actual cost of building a house. Well, was this true for our model?  
 
@@ -183,3 +183,8 @@ These are the 10 most important variables in our model:
 The **consumer price index comes in 2nd**, and with a significantly higher score than the next most important variable. Only the home price index of the previous year (*Index_1*) is more important, and one must admit that's a very tough predictor to outperform!   
 
 Interestingly, when Building Costs do appear, they appear lagged by 3 periods, which comes a bit as a surprise. One would expect that building costs from the previous year would matter the most, but apparently, that is not the case. In fact, costs from the previous year doesn't even appear among the 10 features with the most predictive power -- But consumer price index does. Confirming our previous argument, it ranks high, all but leading the ranking of most important features to predict home pricing.
+
+
+```python
+
+```
