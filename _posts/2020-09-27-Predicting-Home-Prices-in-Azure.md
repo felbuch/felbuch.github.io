@@ -68,11 +68,13 @@ It seems reasonable that if home prices are high in one year, they'll also be hi
 
 ![Index_per_Year_scatterplot](../assets/img/house_prices/Index_per_Year_scatterplot.png)
 
-If we look at the partial autocorrelation plot, however, we see that given the home prices index of two consecutive years, we can predict the index for the following year with the same accuracy as if we had data from the last 3, 4 or 5 years. Only two years back are significant. 
+If we look at the partial autocorrelation plot, however, we see that given the home prices index of two consecutive years, we can predict the index for the following year with the same accuracy as if we had data from the last 3, 4 or 5 years. Only a single year back is significant. 
 
 ![Index_per_Year_scatterplot](../assets/img/house_prices/pacf.png)
 
-Similar results hold for Consumer Price Index and long-term interest rate. But here we're only talking about correlation, so linearity is assumed. To be safe, we'll add 5 years and let the model decide for itself. But we'll not add 5 years for all variables. Only for those we chose to lag. This leads us to discuss another very important issue:
+Similar results hold for Consumer Price Index and long-term interest rate. But here we're only talking about correlation, so linearity is assumed. To be safe, we'll add 5 years and let the model decide for itself.  Yes, I'm aware that inserting more lags than necessary and "letting the model decide for itself" is playing with the Curse of Dimensionality. But we have relatively few features and a fairly long time series, so that shouldn't be a problem. In any case, we'll keep an open eye for potential problems, if they arise.  
+
+Besides, we will not add 5 years for all variables. Only for those we chose to lag. This leads us to discuss another very important issue:
 
 ### Choice of which variables to lag
 
