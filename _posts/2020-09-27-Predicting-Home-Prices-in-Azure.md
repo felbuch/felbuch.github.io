@@ -1,7 +1,7 @@
 
 Can the price of salt be more predictive of home prices, than the cost of building the home itself?  
 
-"Of course not!", cries our intuition! Salt has no relationship with houses whatsoever! Building costs, however, are an closely related to houses: one can never exist without the other! When you pay for a house, you're paying for its building costs, so these two are obviously related! Right? Well...
+"Of course not!", cries our intuition! Salt has no relationship with houses whatsoever! Building costs, however, are closely related to houses: one can never exist without the other! When you pay for a house, you're paying for its building costs, so these two are obviously related! Right? Well...
 
 Not quite. From an Economics perspective, the price of something is derived from a tug-of-war between suply and demand. Sure, costs are really important for the supply side, but it does not play a direct part on determining price. If costs are high, but demand elasticity is low, prices will remain low, and it's the suplier's profit margin that will be hampered.  
 
