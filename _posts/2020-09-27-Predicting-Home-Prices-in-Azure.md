@@ -1,8 +1,4 @@
 
-#  Predicting home prices from table salt 
-
-Felipe Buchbinder 
-
 ## Introduction
 
 Salt is a bitter pill to swallow for those who have never met Adam Smith:   
