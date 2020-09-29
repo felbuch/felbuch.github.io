@@ -1,5 +1,3 @@
-## Introduction
-
 Python and SQL are essential tools for the Data Scientist.  
 In this post, we're going to explore how to connect the two. Namely, we're going to perform a task partly in Python and partly in SQL, all from within a Jupyter Notebook. The task will be to transform a python dataframe into a SQL database in the 3rd normal form. Then, we'll run a SQL query in the database and show it works.   
 
@@ -555,6 +553,7 @@ track_names.head()
   </tbody>
 </table>
 </div>
+
 
 
 
