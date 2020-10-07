@@ -1325,7 +1325,7 @@ conn
 
 
 
-    <sqlite3.Connection at 0x7f59c2ca1c70>
+    <sqlite3.Connection at 0x7f4256709730>
 
 
 
@@ -1368,7 +1368,7 @@ FROM track
 LEFT JOIN
 track_names
 ON track.track_id = track_names.track_id
-WHERE track.instrumentalness > 0 -- a query contains instrumentals when its instrumentalness is greater than zero
+WHERE track.instrumentalness > 0.5 -- a query contains instrumentals when its instrumentalness is greater than 0.5
 ORDER BY track.instrumentalness DESC
 LIMIT 10 -- we'll limit our output to 10
 '''
