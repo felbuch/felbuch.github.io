@@ -3,7 +3,7 @@ In this post, we're going to explore how to connect the two. Namely, we're going
 
 ## First look at the data
 
-The data we'll be using is a dataset of [Spotify songs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md). This is how it looks:
+The data we'll be using is a dataset of [Spotify songs](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md). You will also find a data dictionary on the same link. This is how the data looks:
 
 
 ```python
@@ -1356,7 +1356,11 @@ Don't take my word that the data's up and running. Let's run a query to verify t
 
 > Use an SQL query to find the names of all playlists that contain instrumentals
 
-A query contains instrumentals when its instrumentalness (one of the column in the TRACKS table) is positive. To keep the output visually neat, we'll limit our output to 10 tracks only.
+What does it means "to contain instrumentals"? As it turns out, we have a column called instrumentals. The [data dictionary](https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-01-21/readme.md) says that this column...
+
+> Predicts whether a track contains no vocals. “Ooh” and “aah” sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly “vocal”. The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. **Values above 0.5 are intended to represent instrumental tracks**, but confidence is higher as the value approaches 1.0.
+
+Therefore, a query contains instrumentals when its instrumentalness is above 0.5. To keep the output visually neat, we'll limit our output to 10 tracks only.
 
 To make an SQL query, we begin by writting the query as a multi-line string in Python:
 
@@ -1474,4 +1478,8 @@ pd.read_sql(query, conn)
 
 
 
-It works -- and that is music to my ears!
+To be honest, [Chill Waves & Wind in Leaves](https://www.youtube.com/watch?v=9EUYm0U7DMY&t=42s) is just the sounds of waves and wind. It's relaxing, sure, but I wouldn't even call it music. I'd call it a recording of sounds from nature. In fact, if you excpected that "instrumentalness" should have anything to do with musical instruments, you'd be in for a major disapointment, as there are no pianos or violins in this track. However, if you read the data dictionary carefully, you'll see that  "instrumentalness" has nothing to do with the presence of instruments, but rather to the _abscence of vocal content_. Let's see the data dictionary again:
+
+> **Instrumentalness**: Predicts whether a track contains no vocals (...) The closer the instrumentalness value is to 1.0, the greater likelihood the track contains **no vocal content**.
+
+Under such definition, there's no doubt that [Chill Waves & Wind in Leaves](https://www.youtube.com/watch?v=9EUYm0U7DMY&t=42s) is very, very, very instrumental: it contains no vocal content whatsoever. And by having no vocal content, in shouts that our query works! -- and that is music to my ears!
