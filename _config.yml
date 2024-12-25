@@ -10,14 +10,16 @@ author: Felipe Buchbinder
 
 navbar-links:
   About Me: 
-    - Introduction: "aboutme"
+    - Hi!: "aboutme"
     - CV: "cv"
-    - LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/" 
+    - LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/"
   Portfolio:
-    - How To Make Your Own Website: "https://felbuch.github.io/2020-08-25-How-to-make-your-own-website/"  
-    - Circular primes: "https://felbuch.github.io/2020-08-29-Project-Euler-Problem-35/"
-    - Pandigital primes: "https://felbuch.github.io/2020-08-29-Project-Euler-Problem-41/"
-    - Arranged probability: "https://felbuch.github.io/2020-08-26-Project-Euler-Problem-100/"
+    - Teaching
+    - P
+  #  - How To Make Your Own Website: "https://felbuch.github.io/2020-08-25-How-to-make-your-own-website/"  
+  #  - Circular primes: "https://felbuch.github.io/2020-08-29-Project-Euler-Problem-35/"
+  #  - Pandigital primes: "https://felbuch.github.io/2020-08-29-Project-Euler-Problem-41/"
+  #  - Arranged probability: "https://felbuch.github.io/2020-08-26-Project-Euler-Problem-100/"
 
 # --- Logo --- #
 
@@ -89,7 +91,7 @@ excerpt_length: 50
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "##e8f9fd"
+navbar-col: "#e8f9fd"
 navbar-text-col: "#FFFFFF"
 navbar-border-col: "#026670"
 navbar-children-col: "#FFFFFF"
@@ -97,7 +99,7 @@ page-col: "#faf9f7"
 text-col: "#182628"
 link-col: "#008AFF"
 hover-col: "#D79922"
-footer-col: "##e8f9fd" #"#026670"
+footer-col: "#e8f9fd" #"#026670"
 footer-hover-col: "#D79923"
 footer-text-col: "#FFFFFF"
 footer-link-col: "#D79923"
