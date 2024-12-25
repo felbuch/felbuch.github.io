@@ -9,13 +9,15 @@ author: Felipe Buchbinder
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: 
+    - Introduction: "aboutme"
+    - CV: "cv"
+    - LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/" 
   Portfolio:
     - How To Make Your Own Website: "https://felbuch.github.io/2020-08-25-How-to-make-your-own-website/"  
     - Circular primes: "https://felbuch.github.io/2020-08-29-Project-Euler-Problem-35/"
     - Pandigital primes: "https://felbuch.github.io/2020-08-29-Project-Euler-Problem-41/"
     - Arranged probability: "https://felbuch.github.io/2020-08-26-Project-Euler-Problem-100/"
-  LinkedIn: "https://www.linkedin.com/in/felipe-buchbinder-a65a0199/"
 
 # --- Logo --- #
 
